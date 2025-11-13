@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- CRITICAL: Ensures the page scales correctly on mobile and all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Boys Auto Service Center & Panel Beating</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use Inter font and custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#DC2626', // Red
+                        'secondary': '#1F2937', // Dark Gray/Black
+                        'accent': '#FDE047', // Yellow
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Ensuring Inter font loads for aesthetics */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        /* Ensures smooth scrolling to anchors */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-secondary">
+
+    <!-- Header / Navigation (Simple) -->
+    <header class="bg-secondary shadow-lg sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold text-primary tracking-tight">BIG BOYS AUTO</h1>
+            <!-- Simple Call to Action (Mobile Friendly) -->
+            <a href="#contact" class="bg-primary hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 shadow-md">
+                Book Service
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-800 text-white py-16 sm:py-24 shadow-inner">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <h2 class="text-4xl sm:text-6xl font-black mb-4 leading-tight">
+                Your Complete Auto Care & Panel Beating Experts
+            </h2>
+            <p class="text-xl text-gray-300 mb-8">
+                From routine maintenance to complex engine work and collision repair, we keep your vehicle safe, reliable, and looking its best.
+            </p>
+            <div class="space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#services" class="inline-block bg-primary hover:bg-red-700 text-white text-lg font-bold py-3 px-8 rounded-xl shadow-xl transition transform hover:scale-105 duration-300">
+                    Explore Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 49-Point Safety Check Value Proposition Banner -->
+    <section class="bg-accent py-8 sm:py-10 -mt-2 shadow-xl">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-xl sm:text-2xl font-extrabold text-secondary">
+                <span class="text-primary text-3xl sm:text-4xl mr-2">⭐</span>
+                FREE 49-POINT SAFETY CHECK with all Major Services!
+                <span class="text-primary text-3xl sm:text-4xl ml-2">⭐</span>
+            </p>
+            <p class="mt-1 text-sm text-secondary font-medium">Peace of mind guaranteed before any long road trip.</p>
+        </div>
+    </section>
+    
+    <!-- About Us / Commitment Section (NEW) -->
+    <section id="about" class="bg-white py-16 sm:py-20 shadow-inner">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-3xl font-extrabold text-primary mb-6">
+                Our Commitment: Family Comes First
+            </h3>
+            
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                With **more than 16 years of hands-on experience**, Big Boys Auto is dedicated to providing every customer with great **peace of mind** and **affordable prices**. We achieve this by never compromising on the **quality** of our services or products.
+            </p>
+            
+            <p class="text-xl text-secondary font-bold mb-8 leading-relaxed">
+                We believe in treating our customers like family, and family deserves the absolute best!
+            </p>
+            
+            <a href="#contact" class="inline-block text-primary hover:text-red-700 text-lg font-semibold border-b-2 border-primary pb-1 transition duration-300">
+                Contact us anytime for more information
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 sm:py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-center text-secondary mb-12">
+                Our Comprehensive Services
+            </h3>
+
+            <!-- Grid Layout that shifts from single column (mobile) to two columns (desktop/tablet) -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <!-- Mechanical Services Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-primary hover:shadow-2xl transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary mr-3" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16z"/><path d="M10 16h4v1h-4zm-3-4h10v1H7zm-2-4h14v1H5z"/></svg>
+                        <h4 class="text-2xl font-bold text-secondary">Mechanical & Maintenance</h4>
+                    </div>
+                    <ul class="space-y-4 text-lg text-gray-600">
+                        <li class="flex items-center"><span class="text-primary font-bold mr-2">&#10003;</span> Minor & Major Services</li>
+                        <li class="flex items-center"><span class="text-primary font-bold mr-2">&#10003;</span> Brakes (Repair & Replacement)</li>
+                        <li class="flex items-center"><span class="text-primary font-bold mr-2">&#10003;</span> Clutch Overhauls</li>
+                        <li class="flex items-center"><span class="text-primary font-bold mr-2">&#10003;</span> Engine Overhauling (Complex Repair)</li>
+                        <li class="flex items-center"><span class="text-primary font-bold mr-2">&#10003;</span> Tune Ups</li>
+                    </ul>
+                </div>
+
+                <!-- Panel Beating & Customization Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-primary hover:shadow-2xl transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary mr-3" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 5.5H16V3h1.5zm-2.5 0h-1.5V3h1.5zm-2.5 0h-1.5V3h1.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-4.5-9h9v-1h-9zm0 3h9v-1h-9z"/></svg>
+                        <h4 class="text-2xl font-bold text-secondary">Panel Beating, Paint & Customization</h4>
+                    </div>
+                    <ul class="space-y-4 text-lg text-gray-600">
+                        <li class="flex items-center"><span class="text-primary font-bold mr-2">&#10003;</span> Body Repairs & Panel Beating</li>
+                        <li class="flex items-center"><span class="text-primary font-bold mr-2">&#10003;</span> Spray Painting (Color Matching & Restoration)</li>
+                        <li class="flex items-center"><span class="text-primary font-bold mr-2">&#10003;</span> Detailing and Customising</li>
+                        <li class="flex items-center text-gray-400 italic">... and more specialist services on request.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CTA Footer -->
+            <div class="mt-16 text-center">
+                <a href="#contact" class="inline-block bg-secondary hover:bg-gray-700 text-white text-xl font-bold py-4 px-10 rounded-xl shadow-xl transition transform hover:scale-[1.02] duration-300 border-b-4 border-primary">
+                    Get a Quote Today
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section id="contact" class="bg-gray-200 py-16 sm:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-10">
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-3xl font-extrabold text-secondary mb-6">Contact & Bookings</h3>
+                <p class="text-lg text-gray-700 mb-6">Ready to schedule a service or need a quote? Call or email the Big Boys team using the details below!</p>
+                <div class="space-y-4">
+                    
+                    <!-- Phone 1 (Clickable for mobile dialing) -->
+                    <p class="flex items-center text-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        <span class="font-semibold">Call / WhatsApp:</span> 
+                        <a href="tel:0745356438" class="ml-2 text-secondary hover:text-primary transition font-bold">074 535 6438</a>
+                    </p>
+
+                    <!-- Phone 2 (Clickable for mobile dialing) -->
+                    <p class="flex items-center text-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        <span class="font-semibold">Workshop Line:</span> 
+                        <a href="tel:0763415695" class="ml-2 text-secondary hover:text-primary transition font-bold">076 341 5695</a>
+                    </p>
+
+                    <!-- Email (Clickable for easy emailing) -->
+                    <p class="flex items-center text-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        <span class="font-semibold">Email:</span> 
+                        <a href="mailto:arnowillem@icloud.com" class="ml-2 text-secondary hover:text-primary transition font-bold">arnowillem@icloud.com</a>
+                    </p>
+
+                    <!-- Physical Address (Updated) -->
+                    <p class="flex items-center text-lg text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        <span class="font-semibold">Address:</span> 25 Vellitte Street, Riamar Park, Bronkhorstspruit, Gauteng, 1020
+                    </p>
+                </div>
+            </div>
+
+            <!-- Simple Contact Form (Placeholder) -->
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <h4 class="text-2xl font-bold text-secondary mb-4">Send Us a Message</h4>
+                <form class="space-y-4">
+                    <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary">
+                    <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary">
+                    <textarea placeholder="Tell us about your service needs..." rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary"></textarea>
+                    <button type="submit" class="w-full bg-primary hover:bg-red-700 text-white font-bold py-3 rounded-lg transition duration-300 shadow-md">
+                        Submit Inquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400 text-sm">
+            <p>&copy; 2025 Big Boys Auto Service Center and Panel Beating. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
